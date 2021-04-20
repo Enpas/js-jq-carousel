@@ -1,0 +1,88 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.container {
+  height: 700px;
+  width: 70%;
+  margin: 70px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 40px;
+  background: linear-gradient(#e7f790, #66f0b0);
+}
+
+.container h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  padding-bottom: 30px;
+  color: rgb(172, 77, 0);
+}
+
+/* SLIDER-WRAPPER */
+.container .slider-wrapper {
+  width: 70%;
+  margin: 40px auto;
+  position: relative;
+}
+
+/* IMG-BOX */
+.container .slider-wrapper .img-box {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.container .slider-wrapper .img-box img {
+  width: 100%;
+  border-radius: 5px;
+  margin: auto;
+  display: none;
+}
+
+.container .slider-wrapper .img-box img.active {
+  display: block;
+}
+
+/* CHEVRONS */
+.container .slider-wrapper .fa-chevron-left, 
+.container .slider-wrapper .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5em;
+  cursor: pointer;
+  color: rgb(172, 77, 0);
+}
+
+.container .slider-wrapper .fa-chevron-left {
+  left: -50px;
+}
+
+.container .slider-wrapper .fa-chevron-right {
+  right: -50px;
+}
+
+/* CIRCLE-NAV */
+.container .slider-wrapper .circle-nav {
+  position: absolute;
+  right: 25%;
+  bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .slider-wrapper .circle-nav i {
+  margin: 0 10px;
+  color: rgb(55, 241, 148);
+}
+
+.container .slider-wrapper .circle-nav i.active {
+  color: rgb(167, 48, 48);
+}
